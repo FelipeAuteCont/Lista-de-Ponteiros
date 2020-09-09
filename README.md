@@ -4,4 +4,3 @@ Componentes:
 
 Felipe Augusto Gabriel dos Santos.
 
-Jefferson Estevo Feitosa
