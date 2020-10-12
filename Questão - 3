@@ -1,0 +1,8 @@
+p = i -    p é uma variável do tipo ponteiro deverá receber um endereço de memória e não um inteiro. 
+
+i = (*&) - a sintaxe não funciona com os parênteses.
+
+
+q = *p – o ponteiro q deverá receber um endereço de memória, e não um valor inteiro, que está armazenado no endereço de memória para qual o ponteiro p aponta. 
+
+i = (*p)++ + *q – o operador de incremento ++ não funciona nesta operação. 
