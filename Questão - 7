@@ -1,0 +1,16 @@
+p = mat + 1, seria a única expressão válida, levando em consideração que um array é passado por referência sem necessidade do &, ainda acrescido de uma unidade no 
+endereço do array mat[4]. Logo o ponteiro p receberia a referência do array mat[4] mais a soma de 1 unidade que corresponde a 4bytes na memória.  
+
+
+#include<stdio.h>
+int main(){
+int mat[4],*p,x;
+
+p=mat +1;
+
+
+printf("%x\n",&mat[0]);//61fe00
+printf("%x",p);//61fe04
+
+return 0;
+}
