@@ -1,0 +1,8 @@
+X[0] = 4092
+
+X[0+i]	Char – 1byte	 Int – 2bytes	  Float– 4 bytes	  Double – 8 bytes
+X+1	        4093	         4094	          4096	              4104
+X+2	        4094	         4096	          4100	              4112
+X+3	        4095	         4098	          4104	              4120
+
+
