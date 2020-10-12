@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+int compara(const void *a,const void *b){//é uma função que compara dois valores retornando um inteiro
+return *(int*)a-*(int*)b;//essa funcao faz parte da chamada da funçao qsort da stdlib
+}
+int main(){
+int n,i,(*comp)();//dando nome às variáveis que serão utilizadas
+float *v;
+comp=compara;//comp é o ponteiro para a funçao de comparação
+scanf("%d",&n);//pedindo ao usuario o tamanho do vetor
+v = (float *)malloc(n*sizeof(float));//reservando espaço para o vetor v com alocação dinâmica
+for(i=0;i<n;i++){
+   scanf("%f",(v+i));//inserindo elementos no vetor
+
+}
+
+printf("\n");
+
+qsort(v,n,sizeof(int),comp);//chamada da função qsort usando um ponteiro para a funçao de comparação
+for(i=0;i<n;i++){
+   printf("%f \n",*(v+i));//mostrando elementos ordenados pela função qsort;
+}
+free(v);//liberando o espaço oculpado pelo vetor;
+return 0;
+}
+ 
