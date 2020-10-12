@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+int pulo[7] = {1,2,3,4,5,6,7};
+printf("%d\n",*(pulo + 2)); // 3
+printf("%d\n",*(pulo + 4)); // 5
+printf("%d\n",pulo + 4);    // 6422032
+printf("%d\n",pulo + 2); // 6422024
+
+return 0;
+}
+
+valores retornados 
+3
+5
+6422032
+6422024
+
+quem referencia o valor do terceiro elemento do vetor é    *(pulo + 2)
+
