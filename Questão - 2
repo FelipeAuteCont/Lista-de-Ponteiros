@@ -1,0 +1,19 @@
+Mostre o que será impresso por programa supondo que i ocupa o endereço 4094 na memória.
+
+Int main () {
+int i=5, *p;
+p = &i;
+printf("%x %d %d %d %d", p,*p+2,**&p,3**p,**&p+4);
+
+return 0;
+}
+
+p = endereço de i = 4092 
+
+*p+2 = (valor no endereço de i) + 2 = 7 
+
+**&p = valor armazenado no endereço que está armazenado em p = 5
+
+3**p = valor que está armazenado em p multiplicado por 3. = 15  
+
+**&p +4 = o conteúdo armazenado no endereço de memória em que o  ponteiro p aponta acrescido de 4 =  i + 4 = 5+4 = 9 
